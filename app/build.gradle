@@ -15,14 +15,14 @@ android {
     signingConfigs {
         debug {
             v2SigningEnabled false
-            storeFile file('D:/temp/EcarBugly/app/buildsystem/YCDEVELOP.jks')
+            storeFile file('buildsystem/YCDEVELOP.jks')
             storePassword "123456"
             keyAlias "test"
             keyPassword "123456"
         }
         release {
             v2SigningEnabled false
-            storeFile file('D:/temp/EcarBugly/app/buildsystem/YCDEVELOP.jks')
+            storeFile file('buildsystem/YCDEVELOP.jks')
             storePassword "123456"
             keyAlias "test"
             keyPassword "123456"
