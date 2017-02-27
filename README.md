@@ -15,3 +15,5 @@
   #-dontwarn com.tencent.bugly.**
   #-keep public class com.tencent.bugly.**{*;}
 ```
+##参考文献
+[Bugly Android SDK 使用指南](https://bugly.qq.com/docs/user-guide/instruction-manual-android/?v=20170223160322)
