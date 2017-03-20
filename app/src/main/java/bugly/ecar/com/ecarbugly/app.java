@@ -14,7 +14,7 @@ public class app extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        BuglyUtil.init(this, BuildConfig.buglyId, false); // appid初始化
+        BuglyUtil.init(this, BuildConfig.buglyId, true); // appid初始化
         BuglyUtil.setVersion(this,BuildConfig.VERSION_NAME); //版本号
     }
 }
