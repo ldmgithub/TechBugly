@@ -1,16 +1,19 @@
 apply plugin: 'com.android.application'
 
+
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "bugly.ecar.com.ecarbugly"
-        minSdkVersion 11
+        minSdkVersion 14
         targetSdkVersion 25
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.2"
+        buildConfigField "String", "buglyId", '"c32b92f67e"'
+
         ndk {
-            abiFilters "armeabi", "armeabi-v7a"
+            abiFilters "armeabi"
         }
     }
 
@@ -22,6 +25,7 @@ android {
             storePassword "123456"
             keyAlias "test"
             keyPassword "123456"
+
         }
         release {
             v2SigningEnabled false
@@ -32,13 +36,19 @@ android {
         }
     }
     buildTypes {
-        debug{
+        debug {
+            buildConfigField "boolean", "IS_DEBUG","true"
             minifyEnabled false
+            signingConfig signingConfigs.debug
+
 
         }
         release {
+            buildConfigField "boolean", "IS_DEBUG","false"
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+
         }
     }
     productFlavors {
@@ -67,10 +77,10 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-    compile 'com.android.support:appcompat-v7:25.1.1'
-    testCompile 'junit:junit:4.12'
     compile project(':ecarbuglylib')
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
 }
+
+
+// 依赖插件脚本
+apply from: 'tinker-support.gradle'
