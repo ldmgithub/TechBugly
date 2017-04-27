@@ -39,6 +39,7 @@ public class BuglyUtil {
             // 安装tinker
             Beta.installTinker();
         }
+        Bugly.setIsDevelopmentDevice(app,isTest);  //设置是否为开发机型
         Bugly.init(app, appid, isTest);
 
         CrashReport.initCrashReport(app, appid, isTest);

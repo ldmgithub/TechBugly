@@ -54,7 +54,7 @@ android {
     productFlavors {
 
         pacakge1 {
-            applicationId "com.ecarbugly.p1"
+            applicationIdSuffix ".p1"
             versionCode 1
             versionName '1.1.1.1'
             buildConfigField "String", "buglyId", '"c32b92f67e"'
@@ -64,9 +64,9 @@ android {
         }
 
         pacakge2 {
-            applicationId "com.ecarbugly.p2"
+            applicationIdSuffix ".p2"
             versionCode 1
-            versionName '2.2.2.2'
+            versionName '3.3.3.3'
             buildConfigField "String", "buglyId", '"c32b92f67e"'
             signingConfig signingConfigs.release
 

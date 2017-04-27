@@ -11,14 +11,17 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+//        error();
+        fixed();
+    }
+    // 错误
+    private void error() {
+        Toast.makeText(this, "修复成功".getBytes()[100], Toast.LENGTH_SHORT).show();
 
-        test();
     }
 
-    private void test() {
-
-//        Toast.makeText(this, "未修复", Toast.LENGTH_SHORT).show();
+    //修复
+    private void fixed() {
         Toast.makeText(this, "修复成功", Toast.LENGTH_SHORT).show();
-
     }
 }
