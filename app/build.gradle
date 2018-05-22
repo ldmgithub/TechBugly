@@ -2,8 +2,8 @@ apply plugin: 'com.android.application'
 
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
     defaultConfig {
         applicationId "bugly.ecar.com.ecarbugly"
         minSdkVersion 14
@@ -13,7 +13,7 @@ android {
         buildConfigField "String", "buglyId", '"c32b92f67e"'
 
         ndk {
-            abiFilters "armeabi"
+            abiFilters "armeabi-v7a"
         }
     }
 

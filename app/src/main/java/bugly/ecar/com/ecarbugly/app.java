@@ -6,7 +6,6 @@ import android.support.multidex.MultiDex;
 
 import com.tencent.bugly.Bugly;
 import com.tencent.bugly.beta.Beta;
-import com.tencent.tinker.loader.app.TinkerApplication;
 
 import bugly.ecar.com.ecarbuglylib.util.BuglyUtil;
 
