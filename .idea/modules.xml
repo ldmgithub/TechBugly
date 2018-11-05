@@ -4,10 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/EcarBugly.iml" filepath="$PROJECT_DIR$/EcarBugly.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/TechBugly.iml" filepath="$PROJECT_DIR$/.idea/TechBugly.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/TechBugly.iml" filepath="$PROJECT_DIR$/.idea/TechBugly.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ecarbuglylib/ecarbuglylib.iml" filepath="$PROJECT_DIR$/ecarbuglylib/ecarbuglylib.iml" />
       <module fileurl="file://$PROJECT_DIR$/ecarbuglylib/ecarbuglylib.iml" filepath="$PROJECT_DIR$/ecarbuglylib/ecarbuglylib.iml" />
     </modules>
   </component>

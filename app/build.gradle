@@ -6,12 +6,11 @@ android {
     buildToolsVersion '28.0.0'
     defaultConfig {
         applicationId "bugly.ecar.com.ecarbugly"
-        minSdkVersion 14
+        minSdkVersion 26
         targetSdkVersion 28
         versionCode 3
         versionName "1.2"
         buildConfigField "String", "buglyId", '"c32b92f67e"'
-
         ndk {
             abiFilters "armeabi-v7a"
         }
@@ -51,12 +50,17 @@ android {
 
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
-    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //    compile fileTree(include: ['*.jar'], dir: 'libs')
     compile project(':ecarbuglylib')
     compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+//    compile 'com.microsoft.cognitiveservices.speech:client-sdk:1.0.1'
 }
 
 

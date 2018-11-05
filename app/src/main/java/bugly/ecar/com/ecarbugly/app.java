@@ -23,7 +23,7 @@ public class app extends Application {
     public void onCreate() {
         super.onCreate();
 
-        BuglyUtil.init(this, BuildConfig.buglyId,BuildConfig.IS_DEBUG,BuildConfig.VERSION_NAME);      //初始化（需要tinker）
+        BuglyUtil.init(this, BuildConfig.buglyId,BuildConfig.IS_DEBUG,BuildConfig.VERSION_NAME,false);      //初始化（需要tinker）
 //      BuglyUtil.init(this, BuildConfig.buglyId, BuildConfig.IS_DEBUG,BuildConfig.VERSION_NAME,false);        //初始化（不需要tinker）
 
 
